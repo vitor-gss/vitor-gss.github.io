@@ -80,7 +80,6 @@ main > header {
     z-index: 2;
     grid-area: sidebar;
 
-    border-radius: 10px;
     gap: 10px;
     padding-top: 20px;
     padding-left: 20px;
