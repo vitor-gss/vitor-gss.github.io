@@ -1,0 +1,255 @@
+/* Main*/
+main {
+    display: block;
+    padding: 20px 30px 30px 30px;
+    margin-left: 50px;
+}
+
+main > header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+
+    /* position: relative; */
+    z-index: 1;
+    background-color: #1b1b1b;
+
+    padding-bottom: 20px;
+
+    /* border-bottom: 2px solid white; */
+}
+
+.info-aluno {
+    display: flex;
+    flex-direction: column;
+}
+
+.semestre-atual {
+    display: flex;
+    flex-direction: row;
+}
+
+.caixa-postal {
+    text-align: center;
+    padding: 10px;
+
+    background-color: #000000;
+    border-radius: 8px;
+}
+
+.caixa-postal:hover {
+    transition: ease 300ms;
+    cursor: pointer;
+    background-color: #005227;
+}
+
+.caixa-postal:active {
+    scale: 0.98;
+    background-color: #002e16;
+}
+
+/* Menu lateral*/
+
+#toggleButton {
+    cursor: pointer;
+}
+
+.logo img {
+    max-width: 20%;
+}
+
+.botoes-apoio {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding-bottom: 15px;
+}
+
+.menu-lateral { 
+    position: fixed;
+
+    background-color: #161515;
+    color: rgb(218, 218, 218);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    z-index: 2;
+    grid-area: sidebar;
+
+    border-radius: 10px;
+    gap: 10px;
+    padding-top: 20px;
+    padding-left: 20px;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.icon-menu-lateral {
+    width: 30px;
+    padding-right: 20px;
+}
+
+.modo-escuro {
+    padding-bottom: 10px;
+}
+
+.opcoes-menu-lateral {
+    display: flex;
+    align-items: center;
+    height: 50px;
+
+    padding-bottom: 10px;
+    transition: margin 0.3s;
+}
+
+.menu-lateral span {
+    padding-right: 20px;
+}
+
+.menu-lateral.retraido .opcoes .opcoes-menu-lateral span,
+.modo-escuro.retraido, .menu-lateral.retraido .final span {
+    display: none
+}
+
+.opcoes .opcoes-menu-lateral span:hover,  .final span:hover{
+    color: #0d8d4b;
+    cursor: pointer;
+}
+
+/* .final {} */
+
+/* Perfil aluno */
+.perfil-aluno {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    height: 15%;
+    max-width: 25%;
+}
+
+.foto img {
+    object-fit: cover;
+    border-radius: 100px;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.infos>.nome {
+    font-size: 120%;
+}
+
+.infos>.nome>span {
+    color: #14d16f;
+}
+
+/* Noticias */
+.noticias {
+    display: flex;
+    flex-direction: column;
+    height: 15%;
+}
+
+/* Atualizações */
+.atualizacoes{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    margin-top: 20px;
+    background-color: #161515;
+    border-radius: 8px;
+}
+
+.conteudo-atualizacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+strong:hover {
+    cursor: pointer;
+    color: #14d16f;
+}
+
+.config-geral {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+/* Disciplinas */
+
+.lista-disciplinas{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.disciplinas {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    margin-top: 20px;
+    background-color: #161515;
+    border-radius: 8px;
+
+    margin-bottom: 20px;
+}
+
+.disciplina{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nome-disciplina{
+    cursor: pointer;
+}
+
+.nome-disciplina:hover{
+    color: #14d16f;
+}
+
+/* Trabalhos */
+.trabalhos{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover{
+    color: #14d16f;
+}

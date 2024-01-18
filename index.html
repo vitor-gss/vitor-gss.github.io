@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/padroes.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <!-- Fim CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/949f4682ad.js" crossorigin="anonymous" defer></script>
+</head>
+
+<body>
+    <aside class="menu-lateral expandido">
+        <div class="logo">
+            <!-- <img src="/icons/IFAL_RioLargo_vertical_branco.png" alt=""> -->
+        </div>
+        <div class="botoes-apoio">
+            <i class="fa-solid fa-arrow-right fa-xl icon-menu-lateral" id="toggleButton" style="color: #14d16f;"></i>
+        </div>
+
+        </div>
+        <div class="opcoes">
+            <div class="opcoes-menu-lateral">
+                <i class="fa-solid fa-book icon-menu-lateral fa-xl" style="color: #14d16f;"></i> <span>Ensino</span>
+            </div>
+            <div class="opcoes-menu-lateral">
+                <i class="fa-solid fa-flask icon-menu-lateral fa-xl" style="color: #14d16f;"></i> <span>Pesquisa</span>
+            </div>
+            <div class="opcoes-menu-lateral">
+                <i class="fa-solid fa-house-laptop icon-menu-lateral fa-xl" style="color: #14d16f;"></i>
+                <span>Extensão</span>
+            </div>
+            <div class="opcoes-menu-lateral">
+                <i class="fa-solid fa-chalkboard-user icon-menu-lateral fa-xl" style="color: #14d16f;"></i> <span>Ações
+                    associadas</span>
+            </div>
+            <div class="opcoes-menu-lateral">
+                <i class="fa-solid fa-book-open icon-menu-lateral fa-xl" style="color: #14d16f;"></i>
+                <span>Biblioteca</span>
+            </div>
+            <div class="opcoes-menu-lateral">
+                <i class="fa-solid fa-sack-dollar icon-menu-lateral fa-xl" style="color: #14d16f;"></i>
+                <span>Bolsa/Auxílio</span>
+            </div>
+            <div class="opcoes-menu-lateral">
+                <i class="fa-solid fa-book-open-reader icon-menu-lateral fa-xl" style="color: #14d16f;"></i>
+                <span>Estágio</span>
+            </div>
+            <div class="opcoes-menu-lateral">
+                <i class="fa-solid fa-network-wired icon-menu-lateral fa-xl" style="color: #14d16f;"></i>
+                <span>Outros</span>
+            </div>
+        </div>
+        <div class="opcoes-menu-lateral final">
+            <i class="fa-solid fa-gear icon-menu-lateral fa-xl" style="color: #b5b5b5;"></i>
+            <span>Configurações</span>
+        </div>
+    </aside>
+
+    <main class="main-ret">
+        <header class="box-cabecalho" id="hd">
+            <div class="info-instituicao cabecalho">
+                IFAL - SIGAA - Sistema Integrado de Gestão de Atividades Acadêmicas
+            </div>
+            <div class="info-box-row">
+                <div class="info-aluno">
+                    <div class="nome-aluno">Chipi Chipi Chapa Chapa</div>
+                    <div class="nome-campus">Campus Rio Largo</div>
+                </div>
+                <div class="semestre-atual">
+                    Semestre atual: <div id="semestre-atual"></div>
+                </div>
+                <div class="caixa-postal">
+                    <i class="fa-solid fa-envelope" style="color: #14d16f;"></i> Suas mensagens
+                </div>
+            </div>
+        </header>
+
+        <section class="perfil-aluno box config-geral">
+            <div class="infos">
+                <div class="nome">Olá, <span>Chipi Chipi!</span></div>
+                <div class="num-matricula">2022304623</div>
+            </div>
+            <div class="foto">
+                <img src="../icons/chipi.jpg" alt="">
+            </div>
+        </section>
+
+        <section class="noticias box config-geral">
+            <div class="noticia">
+                Não há noticias cadastradas.
+            </div>
+        </section>
+
+        <section class="atualizacoes">
+            <div class="cabecalho">
+                Últimas atualizações:
+            </div>
+            <div class="conteudo-atualizacoes">
+                <div>17/12/2023 - <strong>Sistemas Operacionais</strong></div>
+                <div>Nova notícia: Apresentação de trabalhos.</div>
+            </div>
+        </section>
+
+        <section class="disciplinas">
+            <header class="cabecalho">
+                <div>Disciplinas</div>
+                <div>Local</div>
+            </header>
+            <div class="lista-disciplinas" id="lista-disciplinas">
+            </div>
+        </section>
+
+        <section class="trabalhos box-cabecalho">
+            <div class="cabecalho">
+                <div class="nome-trabalho">Trabalho</div>
+                <div class="prazos">Prazo de entrega</div>
+            </div>
+            <div class="trabalho info-box-row">
+                <div class="nome-disciplina">Geografia</div>
+                <div class="prazo">18/12/2023</div>
+            </div>
+        </section>
+
+        <footer class="box config-geral">
+            <div class="info">SIGAA | DTI - Diretoria da Tecnologia de Informação - IFAL - <a
+                    href="https://www2.ifal.edu.br/">www2.ifal.edu.br</a> | Copyright ©
+                2023 - <span id="anoAtual"></span> - Vixz - v0.5 <span id="dataAtual"></span> <span
+                    id="horaAtual"></span></div>
+        </footer>
+    </main>
+
+    <!-- Scripts -->
+    <script src="../js/footer/semestreAtual.js"></script>
+    <script src="../js/controladorBarraLateral.js"></script>
+    <script src="../js/index/disciplinas.js"></script>
+    <script src="../js/index/trabalhos.js"></script>
+</body>
+
+</html>
