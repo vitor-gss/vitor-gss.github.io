@@ -1,0 +1,36 @@
+.card {
+    display: flex;
+    width: 780px;
+    border: 1px solid black;
+}
+
+.nomeAluno {
+   padding-left: 10px; 
+   width: 420px;
+   border-right: 1px solid black;
+}   
+
+.numAluno{
+    width: 30px;
+    border-right: 1px solid black;
+    text-align: center;
+}
+
+.ordemDeApresentacao{
+    text-align: center;
+    width: 200px;
+    border-right: 1px solid black;
+}
+
+header{
+    margin-bottom: 15px;
+}
+
+.eliminarAluno{
+    text-align: center;
+    width: 120px;
+}
+
+.eliminado{
+    background-color: red;
+}
